@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap"
           rel="stylesheet">
+    <script src="js/script.js" defer></script>
     <link rel="stylesheet" href="css/style.css">
     <title>Loop Studios Landing Page</title>
 </head>
@@ -53,16 +54,31 @@
             <div class="md:hidden">
                 <button id="menu-btn"
                         type="button"
-                        class="z-40 md:hidden focus:outline-none hamburger">
+                        class="z-40 hamburger block md:hidden focus:outline-none ">
                     <span class="hamburger-top"></span>
                     <span class="hamburger-middle"></span>
                     <span class="hamburger-bottom"></span>
                 </button>
             </div>
         </nav>
-        <!--            @todo Mobile Menu-->
+        <!--Mobile Menu-->
+        <div id="menu"
+            class="absolute top-0 bottom-0 left-0
+                hidden
+                bg-black text-white
+                text-2xl font-bold
+                flex-col
+                space-y-6
+                w-full min-h-screen
+                pt-40 pl-20">
+            <a href="#" class="hover:text-pink-100 hover:-translate-y-0.5 duration-200">About</a>
+            <a href="#" class="hover:text-pink-100 hover:-translate-y-0.5 duration-200">Careers</a>
+            <a href="#" class="hover:text-pink-100 hover:-translate-y-0.5 duration-200">Events</a>
+            <a href="#" class="hover:text-pink-100 hover:-translate-y-0.5 duration-200">Products</a>
+            <a href="#" class="hover:text-pink-100 hover:-translate-y-0.5 duration-200">Support</a>
+        </div>
 
-        <!--            Bottom Hero Section-->
+        <!--Bottom Hero Section-->
         <div class="max-w-lg
                         my-32 p-4
                         font-sans text-white text-4xl
