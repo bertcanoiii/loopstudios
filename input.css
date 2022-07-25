@@ -14,7 +14,7 @@
     .btn {
         @apply text-center
         border-2 border-black
-        px-10
+        px-10 py-2
         text-gray-900
         font-alata
         tracking-widest
