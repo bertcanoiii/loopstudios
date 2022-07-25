@@ -2,6 +2,58 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+    h5 {
+        @apply absolute px-6 w-full bottom-4
+        group-hover:text-black group-hover:scale-95
+        duration-500;
+    }
+}
+
+@layer components {
+    .btn {
+        @apply text-center
+        border-2 border-black
+        px-10
+        text-gray-900
+        font-alata
+        tracking-widest
+        bg-white
+        hover:bg-black hover:text-white duration-500
+    }
+}
+
+.item-container {
+    @apply flex flex-col
+    space-y-6
+    justify-between
+    w-full
+    text-white text-3xl
+    font-bold
+    uppercase
+    md:flex-row
+    md:space-y-0 md:space-x-6;
+}
+
+.item {
+    @apply relative overflow-hidden md:w-1/4;
+}
+
+.item-gradient {
+    @apply absolute top-0 bottom-0 left-0 right-0
+    bg-gradient-to-b from-transparent to-gray-700 opacity-50
+    group-hover:from-gray-50 group-hover:to-white group-hover:opacity-70
+    duration-500;
+}
+
+.desktop-item {
+    @apply hidden md:block w-full group-hover:scale-110 group-hover:rotate-1 duration-500;
+}
+
+.mobile-item {
+    @apply md:hidden w-full group-hover:scale-110 group-hover:rotate-1 duration-500;
+}
+
 #hero {
     background-image: url("../images/desktop/image-hero.jpg");
     background-repeat: no-repeat;
